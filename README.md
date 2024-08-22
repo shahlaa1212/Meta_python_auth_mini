@@ -16,26 +16,44 @@ This project is part of a Back-End Development course focusing on Week 1 of the 
 # 📖 Task Description
 ## **Objective**
 
-The objective of this task is to create a Python program that handles basic user authentication through command-line interactions. Users can sign up, sign in, and sign out, with all user data stored in a CSV file. The program ensures that user data is properly validated and securely managed.
-Key Features
-
+In this task, you will implement basic authentication functions for a Python program that handles user sign-in, sign-up, and sign-out. You will be working with user data stored in a file (**users.csv** or **users.txt**). The goal is to read, write, and update user data through command-line interactions. The data in the file will be structured as follows:
+```sh
+ first_name, last_name, username, password, age, is_loggedin
+```
 - Sign Up: Users can create a new account by providing their first name, last name, username, password, and age. The program validates that the username is unique and ensures that the password is not empty and the age is a positive integer.
 - Sign In: Users can log in by providing a valid username and password. The program checks if the credentials match and updates the user's login status.
 - Sign Out: Logged-in users can log out, and the program will update their login status accordingly.
 
 ## **File Structure**
 
-- main.py: Handles user input from the command line and manages the program's flow.
-- auth.py: Contains the pure functions (signup, signin, signout) that handle the core authentication logic.
+- **main.py** : This file will handle user input from the command line and manage the flow of the program.
+- **auth.py** : This file will contain the authentication functions for sign-in, sign-up, and sign-out.
 - users.csv: Stores user data, with fields for first name, last name, username, password, age, and login status.
 
-## **Key Concepts**
+## **Implement Functions :- **
+- ### **signup()**
+- [ ] Prompt the user for **first_name**, **last_name**, **username**, **password**, and **age**.
+- [ ] Validate that **username** does not already exist in the data file.
+- [ ] If the username** is unique, append the new user's data to the file with **is_loggedin** set to **False**.
+- [ ] Print a success message after a successful sign-up.
+- [ ] If the username already exists, print an error message and ask the user to try again.
 
-- Pure Functions: The task is designed to encourage the use of pure functions, which operate on the given input and produce output without side effects.
-- File Handling: User data is read from and written to a CSV file, providing a practical introduction to file I/O in Python.
-- OOP Principles: While the task avoids a full object-oriented design (i.e., no UserManager class), it still demonstrates modularity and the organization of related functions and data.
+- ### **signin()**
+- [ ] Prompt the user for username and password.
+- [ ] Read the data file and check if the username and password match an existing record.
+- [ ] If the credentials are correct, update the is_loggedin status to True for that user.
+- [ ] Print a success message after a successful login.
+- [ ] If the credentials are incorrect, print an error message and ask the user to try again.
 
-# 📌 **Getting Started**
+- ### **signout()**
+- [ ] Prompt the user for username.
+- [ ] Read the data file and check if the user is currently logged in (is_loggedin is True).
+- [ ] If the user is logged in, update the is_loggedin status to False.
+- [ ] Print a success message after a successful logout.
+- [ ] If the user is not logged in, print an error message.
+
+
+- # 📌 **Getting Started**
 ## Prerequisites
 - Python 3.x
 - Basic knowledge of Python programming
