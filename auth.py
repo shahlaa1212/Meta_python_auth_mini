@@ -11,6 +11,14 @@ def signup():
     password = input("Enter The password: ") 
     age = input("Enter The age: ")  
     
+    if not password:
+        print("The password is not empty")
+        return
+        
+    if not age.isdigit() or int(age) <= 0:
+        print("The Age must be positive integer")
+        return
+    
     with open(FILE_NAME, newline='') as csvfile:
         spamreader = csv.reader(csvfile)
         for row in spamreader:
@@ -20,7 +28,7 @@ def signup():
                 
     with open(FILE_NAME, mode='a', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow([username, "False"])
+        writer.writerow([username, password, age, first_name, last_name,"False"])
         print("Signup successful!")
 
 
@@ -28,29 +36,25 @@ def signup():
 def signin():
     username = input("Enter username: ")
     password = input("Enter password: ")
-
+   
     updated_rows = []
-    success = False
     
     with open(FILE_NAME, newline='') as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
+            updated_rows.append(row)
             if row[0] == username and row[1] == password:
                 row[5] = "True"
-                success = True
                 print("Signin successful!")
-            updated_rows.append(row)
-        print("Signin failed! Invalid username or password.")    
-    
-    if success:
-        with open(FILE_NAME, mode='w', newline='') as file:
-            writer = csv.writer(file)
-            # writer.writerow(["username", "password"])
-            writer.writerows(updated_rows)
-        print("Signin successful!")
-    else:
-        print("Error: Incorrect username or password. Please try again.")
-
+                break
+            else:
+                print("Error: Incorrect username or password. Please try again.")    
+            return
+            
+    with open(FILE_NAME, mode='w', newline='') as file:
+         writer = csv.writer(file)
+         writer.writerows(updated_rows)
+       
 
 # Function to sign out an existing user
 def signout():
@@ -62,15 +66,18 @@ def signout():
         reader = csv.reader(file)
         next(reader)  # Skip header row
         for row in reader:
-            if row[0] == username :
-                success = True
             updated_rows.append(row)
+            if row[0] == username :
+                if row[5] == 'True':
+                   row[5] = False
+                   print("Logout successful")
+                else:
+                    print("User is not logged in.")
+                break
+        else:
+            print("username not found")
+            return    
     
-    if success:
-        with open(FILE_NAME, mode='w', newline='') as file:
-            writer = csv.writer(file)
-            writer.writerow(["username", "password"])
-            writer.writerows(updated_rows)
-        print("Signout successful!")
-    else:
-        print("Error: User is not logged in or does not exist.")
+    with open(FILE_NAME, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(updated_rows)
