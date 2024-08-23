@@ -30,7 +30,7 @@ In this task, you will implement basic authentication functions for a Python pro
 - **auth.py** : This file will contain the authentication functions for sign-in, sign-up, and sign-out.
 - users.csv: Stores user data, with fields for first name, last name, username, password, age, and login status.
 
-## **Implement Functions :- **
+## **Implement Functions :-**
 - ### **signup()**
 - [ ] Prompt the user for **first_name**, **last_name**, **username**, **password**, and **age**.
 - [ ] Validate that **username** does not already exist in the data file.
@@ -46,14 +46,13 @@ In this task, you will implement basic authentication functions for a Python pro
 - [ ] If the credentials are incorrect, print an error message and ask the user to try again.
 
 - ### **signout()**
-- [ ] Prompt the user for username.
-- [ ] Read the data file and check if the user is currently logged in (is_loggedin is True).
-- [ ] If the user is logged in, update the is_loggedin status to False.
+- [ ] Prompt the user for **username**.
+- [ ] Read the data file and check if the user is currently logged in (**is_loggedin** is **True**).
+- [ ] If the user is logged in, update the **is_loggedin** status to **False**.
 - [ ] Print a success message after a successful logout.
 - [ ] If the user is not logged in, print an error message.
 
-
-- # 📌 **Getting Started**
+# 📌 **Getting Started**
 ## Prerequisites
 - Python 3.x
 - Basic knowledge of Python programming
