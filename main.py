@@ -18,7 +18,7 @@ Please select an option:
 
         match command:
             case 1:
-                # username = input("Enter username")
+
                 signin()
             case 2:
                 signup()
