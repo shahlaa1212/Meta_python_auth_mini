@@ -4,17 +4,17 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) 
 ![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)
 
-# 🧾 Overview
+## 🧾 Overview
 This project is part of a Back-End Development course focusing on Week 1 of the "Programming with Python" module. The task involves implementing basic authentication functions, including user sign-in, sign-up, and sign-out, using Python. The project emphasizes both fundamental Python programming using procedure function and csv file 
 
-# 📅 Course Context
+## 📅 Course Context
 - Course: Meta Backend Developer Specialization
 - Module: Programming with Python
 - Week: 1
 - Focus: Python fundamentals, file handling, user authentication
 
-# 📖 Task Description
-## **Objective**
+## 📖 Task Description
+### **Objective**
 
 In this task, you will implement basic authentication functions for a Python program that handles user sign-in, sign-up, and sign-out. You will be working with user data stored in a file (**users.csv** or **users.txt**). The goal is to read, write, and update user data through command-line interactions. The data in the file will be structured as follows:
 ```sh
@@ -52,13 +52,13 @@ In this task, you will implement basic authentication functions for a Python pro
 - [ ] Print a success message after a successful logout.
 - [ ] If the user is not logged in, print an error message.
 
-# 📌 **Getting Started**
-## Prerequisites
+## 📌 **Getting Started**
+### Prerequisites
 - Python 3.x
 - Basic knowledge of Python programming
 - Familiarity with command-line interface (CLI) operations
 
-## Running the Program  
+### Running the Program  
 1. **Clone the repository:**
  ```sh
   git clone https://github.com/yourusername/authentication-python-task.git
@@ -72,6 +72,6 @@ In this task, you will implement basic authentication functions for a Python pro
 ```
 3. Follow the on-screen prompts to sign up, sign in, or sign out.
 
-# 🤝 Conclusion
+## 🤝 Conclusion
 This project serves as an introduction to backend development using Python, focusing on user authentication and file handling. It lays the groundwork for more complex tasks in the subsequent weeks of the course.
 
