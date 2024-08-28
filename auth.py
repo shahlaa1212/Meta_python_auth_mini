@@ -41,17 +41,29 @@ def signin():
 
     with open('users.csv', newline='') as csvfile:
         reader = csv.reader(csvfile)
+        next(reader)  # Skip header row
         for row in reader:
             updated_rows.append(row)
-            if row[0] == username and row[1] == password:
-                row[5] = "True"
+            # print(f"row[0]: {row[0]}")
+            # print(f"username: {username}")
+            # print(f"row[1]: {row[1]}")
+            # print(f"password: {password}")
+            # if row[0] == username and row[1] == password:
+            # if row[0] == username:
+            #     if row[1] == password:
+            #         row[5] = "True"
+            #     print("Signin successful!")
+            #     break
+            # else:
+            #     print("Error: Incorrect username or password. Please try again.")    
+            # return
+            if row[0] == username or row[1] == password:
                 print("Signin successful!")
-                break
-            else:
-                print("Error: Incorrect username or password. Please try again.")    
-            return
+                return
+        print("Wrong credentials")
             
-    with open(FILE_NAME, mode='w', newline='') as file:
+
+    with open(FILE_NAME, mode='a', newline='') as file:
          writer = csv.writer(file)
          writer.writerows(updated_rows)
        
