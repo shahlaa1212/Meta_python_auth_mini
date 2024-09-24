@@ -20,32 +20,32 @@ In this task, you will implement basic authentication functions for a Python pro
 ```sh
  first_name, last_name, username, password, age, is_loggedin
 ```
-- Sign Up: Users can create a new account by providing their first name, last name, username, password, and age. The program validates that the username is unique and ensures that the password is not empty and the age is a positive integer.
-- Sign In: Users can log in by providing a valid username and password. The program checks if the credentials match and updates the user's login status.
-- Sign Out: Logged-in users can log out, and the program will update their login status accordingly.
+- **`Sign Up`**: Users can create a new account by providing their first name, last name, username, password, and age. The program validates that the username is unique and ensures that the password is not empty and the age is a positive integer.
+- **`Sign In`**: Users can log in by providing a valid username and password. The program checks if the credentials match and updates the user's login status.
+- **`Sign Out`**: Logged-in users can log out, and the program will update their login status accordingly.
 
 ## **File Structure**
 
-- **main.py** : This file will handle user input from the command line and manage the flow of the program.
-- **auth.py** : This file will contain the authentication functions for sign-in, sign-up, and sign-out.
-- users.csv: Stores user data, with fields for first name, last name, username, password, age, and login status.
+- **`main.py`** : This file will handle user input from the command line and manage the flow of the program.
+- **`auth.py`** : This file will contain the authentication functions for sign-in, sign-up, and sign-out.
+- **`users.csv`**: Stores user data, with fields for first name, last name, username, password, age, and login status.
 
 ## **Implement Functions :-**
-- ### **signup()**
+- ### **`signup()`**
 - [ ] Prompt the user for **first_name**, **last_name**, **username**, **password**, and **age**.
 - [ ] Validate that **username** does not already exist in the data file.
 - [ ] If the username** is unique, append the new user's data to the file with **is_loggedin** set to **False**.
 - [ ] Print a success message after a successful sign-up.
 - [ ] If the username already exists, print an error message and ask the user to try again.
 
-- ### **signin()**
+- ### **`signin()`**
 - [ ] Prompt the user for username and password.
 - [ ] Read the data file and check if the username and password match an existing record.
 - [ ] If the credentials are correct, update the is_loggedin status to True for that user.
 - [ ] Print a success message after a successful login.
 - [ ] If the credentials are incorrect, print an error message and ask the user to try again.
 
-- ### **signout()**
+- ### **`signout()`**
 - [ ] Prompt the user for **username**.
 - [ ] Read the data file and check if the user is currently logged in (**is_loggedin** is **True**).
 - [ ] If the user is logged in, update the **is_loggedin** status to **False**.
