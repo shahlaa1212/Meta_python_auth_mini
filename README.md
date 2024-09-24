@@ -32,25 +32,25 @@ In this task, you will implement basic authentication functions for a Python pro
 
 ## **Implement Functions :-**
 - ### **`signup()`**
-- [ ] Prompt the user for **first_name**, **last_name**, **username**, **password**, and **age**.
-- [ ] Validate that **username** does not already exist in the data file.
-- [ ] If the username** is unique, append the new user's data to the file with **is_loggedin** set to **False**.
-- [ ] Print a success message after a successful sign-up.
-- [ ] If the username already exists, print an error message and ask the user to try again.
+  -  Prompt the user for **first_name**, **last_name**, **username**, **password**, and **age**.
+  - Validate that **username** does not already exist in the data file.
+  - If the username** is unique, append the new user's data to the file with **is_loggedin** set to **False**.
+  - Print a success message after a successful sign-up.
+  - If the username already exists, print an error message and ask the user to try again.
 
 - ### **`signin()`**
-- [ ] Prompt the user for username and password.
-- [ ] Read the data file and check if the username and password match an existing record.
-- [ ] If the credentials are correct, update the is_loggedin status to True for that user.
-- [ ] Print a success message after a successful login.
-- [ ] If the credentials are incorrect, print an error message and ask the user to try again.
+  - Prompt the user for username and password.
+  - Read the data file and check if the username and password match an existing record.
+  - If the credentials are correct, update the is_loggedin status to True for that user.
+  - Print a success message after a successful login.
+  - If the credentials are incorrect, print an error message and ask the user to try again.
 
 - ### **`signout()`**
-- [ ] Prompt the user for **username**.
-- [ ] Read the data file and check if the user is currently logged in (**is_loggedin** is **True**).
-- [ ] If the user is logged in, update the **is_loggedin** status to **False**.
-- [ ] Print a success message after a successful logout.
-- [ ] If the user is not logged in, print an error message.
+  - Prompt the user for **username**.
+  - Read the data file and check if the user is currently logged in (**is_loggedin** is **True**).
+  - If the user is logged in, update the **is_loggedin** status to **False**.
+  - Print a success message after a successful logout.
+  - If the user is not logged in, print an error message.
 
 ## 📌 **Getting Started**
 ### Prerequisites
