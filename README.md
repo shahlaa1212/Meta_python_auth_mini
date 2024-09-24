@@ -10,7 +10,7 @@ This project is part of a Back-End Development course focusing on Week 1 of the 
 ## 📅 **Course Context**
 - Course: Meta Backend Developer Specialization
 - Module: Programming with Python
-- Week: 1
+- Week: 2
 - Focus: Python fundamentals, file handling, user authentication
 
 ## 📖 **Task Description**
