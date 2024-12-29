@@ -12,7 +12,7 @@
 # 🔐 Authentication Functions in Python 
 
 ## 🧾 **Overview**
-This project is part of a 𝐌𝐞𝐭𝐚 𝐁𝐚𝐜𝐤𝐞𝐧𝐝 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐂𝐨𝐮𝐫𝐬𝐞 focusing on in "Programming with Python" . The task involves implementing basic authentication functions, including user sign-in, sign-up, and sign-out, using Python. The project emphasizes both fundamental Python programming using procedure function and csv file .
+This project is part of a 𝐌𝐞𝐭𝐚 𝐁𝐚𝐜𝐤𝐞𝐧𝐝 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐂𝐨𝐮𝐫𝐬𝐞 focusing in Foundations of Python Programming. The task involves implementing basic authentication functions, including user sign-in, sign-up, and sign-out, using Python. The project emphasizes both fundamental Python programming using procedure function and csv file .
 
 ## 📅 **Course Context**
 - Course: Meta Backend Developer Specialization
